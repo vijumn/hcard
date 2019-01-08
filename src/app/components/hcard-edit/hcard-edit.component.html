@@ -1,0 +1,64 @@
+<div>
+  <h1>
+    hCard Builder
+  </h1>
+ </div>
+ <div>
+   <div>
+   
+      <form>
+        <div>
+        <div class="container">
+              <h1>Personal Details:</h1>
+        <div>
+          
+          <label for="givenname">GIVEN NAME</label>
+          <input type="text" class="form-control" id="givennamme"  [(ngModel)]="model.givenname" name="givenname">
+        </div>
+        <div>
+          <label for="surname">SURNAME</label>
+          <input type="text" class="form-control" id="surname"  [(ngModel)]="model.surname" name="surname">
+        </div>
+        <div>
+          <label for="email">EMAIL</label>
+          <input type="text" class="form-control" id="email"  [(ngModel)]="model.email" name="email">
+        </div>
+        <div>
+          <label for="phone">PHONE</label>
+          <input type="text" class="form-control" id="phone"  [(ngModel)]="model.phone" name="phone">
+        </div>
+      </div>
+    <div class="container">
+        <h1>Address:</h1>
+  <div>
+    <label for="house">HOUSE NAME OR #</label>
+    <input type="text" class="form-control" id="house"  [(ngModel)]="model.house" name="house">
+  </div>
+  <div>
+    <label for="street">STREET</label>
+    <input type="text" class="form-control" id="street"  [(ngModel)]="model.street" name="street">
+  </div>
+  <div>
+    <label for="suburb">SUBURB</label>
+    <input type="text" class="form-control" id="suburb"  [(ngModel)]="model.suburb" name="suburb">
+  </div>
+  <div>
+    <label for="state">STATE</label>
+    <input type="text" class="form-control" id="state"  [(ngModel)]="model.state" name="state">
+  </div>
+  <div>
+      <label for="postcode">POSTCODE</label>
+      <input type="text" class="form-control" id="postcode"  [(ngModel)]="model.postcode" name="postcode">
+    </div>
+    <div>
+      <label for="country">COUNTRY</label>
+      <input type="text" class="form-control" id="country"  [(ngModel)]="model.country" name="country">
+    </div>
+  <button type="submit" class="btn btn-default">Create hCard</button>
+
+</div>
+  </div>
+  </form>
+  </div>
+
+</div>
