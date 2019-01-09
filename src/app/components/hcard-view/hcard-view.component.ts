@@ -1,20 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {HCardView} from './../../Model/HCardView';
+import { HCard } from 'src/app/model/hcard';
 @Component({
   selector: 'app-hcard-view',
   templateUrl: './hcard-view.component.html',
   styleUrls: ['./hcard-view.component.scss']
 })
 export class HcardViewComponent implements OnInit {
-  model: HCardView = {
-    givenname: 'Windstorm',
-    surname:'',
-    email:'',
-    phone:'',
-    postcode:'', 
-    address:'', 
-    country:''
-  };
+
+  @Input() displaycard:HCard;
+
   constructor() { }
 
   ngOnInit() {

@@ -5,14 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HcardEditComponent } from './components/hcard-edit/hcard-edit.component';
 import { HcardViewComponent } from './components/hcard-view/hcard-view.component';
-import { UiModule } from './ui/ui.module';
+import { UiModule } from './shared/ui/ui.module';
+import { HcardMainComponent } from './components/hcard-main/hcard-main.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HcardEditComponent,
-    HcardViewComponent
+    HcardViewComponent,
+    HcardMainComponent
   ],
   imports: [
     BrowserModule,
