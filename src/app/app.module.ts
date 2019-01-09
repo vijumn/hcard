@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HcardEditComponent } from './components/hcard-edit/hcard-edit.component';
 import { HcardViewComponent } from './components/hcard-view/hcard-view.component';
+import { UiModule } from './ui/ui.module';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { HcardViewComponent } from './components/hcard-view/hcard-view.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    UiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
